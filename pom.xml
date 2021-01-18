@@ -1,17 +1,19 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>es.proyectocapgemini.app</groupId>
-  <artifactId>proyectoCapgemini</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <packaging>pom</packaging>
-  <modules>
-  	<module>proyectoCapgemini-servicios</module>
-  	<module>proyectoCapgemini-bbdd</module>
-  	<module>proyectoCapgemini-front</module>
-  	<module>proyectoCapgemini-negocio</module>
-  </modules>
-  
-  <properties>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>es.proyectocapgemini.app</groupId>
+	<artifactId>proyectoCapgemini</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<modules>
+		<module>proyectoCapgemini-servicios</module>
+		<module>proyectoCapgemini-bbdd</module>
+		<module>proyectoCapgemini-front</module>
+		<module>proyectoCapgemini-negocio</module>
+	</modules>
+
+	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<spring.version>5.3.3</spring.version>
 	</properties>
@@ -42,7 +44,20 @@
 					<release>11</release>
 				</configuration>
 			</plugin>
+
+			<plugin>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-maven-plugin</artifactId>
+				<version>9.2.10.v20150310</version>
+				<configuration>
+					<!-- Java 11 -->
+					<release>11</release>
+					<!-- App Web -->
+				</configuration>
+			</plugin>
 		</plugins>
+
+
 	</build>
-	
+
 </project>
