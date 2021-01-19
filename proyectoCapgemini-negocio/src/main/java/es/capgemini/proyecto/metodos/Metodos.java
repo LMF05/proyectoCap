@@ -1,4 +1,4 @@
-package es.capgemini.proyecto.metodosaop;
+package es.capgemini.proyecto.metodos;
 
 public interface Metodos {
 

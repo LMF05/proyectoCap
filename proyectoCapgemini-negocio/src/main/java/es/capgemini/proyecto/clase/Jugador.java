@@ -2,8 +2,17 @@ package es.capgemini.proyecto.clase;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import es.capgemini.proyecto.metodos.Metodos;
+
+@Component
 public class Jugador {
 
+	@Autowired
+	Metodos metodos;
+	
 	private int edad;
 	private String nombre;
 	private String descripcion;
@@ -41,4 +50,8 @@ public class Jugador {
 		this.juegos = juegos;
 	}
 	
+	public void aspectJ() {
+		metodos.Metodo1();
+		metodos.Metodo2();
+	}
 }
