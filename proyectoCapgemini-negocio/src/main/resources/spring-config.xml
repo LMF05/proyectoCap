@@ -13,5 +13,5 @@
 	<!-- Equivalente a la anotacion @EnableAspectJAutoProxy de la clase de configuracion de Spring -->
 	<aop:aspectj-autoproxy/>
 
-	<bean id="consoleAspectJ" class="es.capgemini.proyecto.aop.ConsoleAspectJ"/>
+	<bean id="consoleAspectJ" class="es.capgemini.proyecto.negocio.aop.ConsoleAspectJ"/>
 </beans>

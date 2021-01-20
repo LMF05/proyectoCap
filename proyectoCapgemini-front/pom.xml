@@ -3,22 +3,18 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<parent>
-		<artifactId>proyectoCapgemini</artifactId>
-		<groupId>es.proyectocapgemini.app</groupId>
-		<version>0.0.1-SNAPSHOT</version>
-	</parent>
+	<!-- <parent> <artifactId>proyectoCapgemini</artifactId> <groupId>es.proyectocapgemini.app</groupId> 
+		<version>0.0.1-SNAPSHOT</version> </parent> -->
 
 	<groupId>es.proyectocapgemini.front</groupId>
 	<artifactId>proyectoCapgemini-front</artifactId>
+	<version>0.0.1-SNAPSHOT</version> 
 	<packaging>war</packaging>
 
-	<name>proyectoCapgemini-front Maven Webapp</name>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<spring-version>4.3.7.RELEASE</spring-version> <!-- 5.3.3 -->
 		<servlet.version>3.1.0</servlet.version> <!-- 4.0.0 -->
-		<jstl.version>1.2</jstl.version>
 	</properties>
 
 	<dependencies>
@@ -37,18 +33,15 @@
 				(Jetty) -->
 			<scope>provided</scope>
 		</dependency>
-
-		<!-- Api Java Standard Tag Library -->
-		<dependency>
-			<groupId>jstl</groupId>
-			<artifactId>jstl</artifactId>
-			<version>${jstl.version}</version>
-			<scope>provided</scope>
-		</dependency>
+		<!-- <dependency>
+			<groupId>es.proyectocapgemini.app</groupId>
+			<artifactId>proyectoCapgemini-negocio</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>  -->
 	</dependencies>
 
 	<build>
-		<finalName>springmvc-capas</finalName>
+		<finalName>proyectocapgemini-front</finalName>
 		<plugins>
 			<!-- Compilador Maven -->
 			<plugin>
