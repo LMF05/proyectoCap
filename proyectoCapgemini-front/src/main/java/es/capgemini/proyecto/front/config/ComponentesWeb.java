@@ -9,9 +9,9 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages = {"es.proyectocapgemini.app.es.capgemini.proyecto.front.web"})
+@ComponentScan(basePackages = {"es.capgemini.proyecto.front.web"})
 public class ComponentesWeb{
-
+	
 	@Bean
 	public ViewResolver viewResolver() {
 		InternalResourceViewResolver resolver = new InternalResourceViewResolver();

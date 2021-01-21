@@ -7,7 +7,7 @@ public class ControllerInitializer extends AbstractAnnotationConfigDispatcherSer
 
 	@Override
 	protected Class<?>[] getRootConfigClasses() {
-		return new Class<?>[] {};
+		return new Class<?>[] {ComponentesBack.class};
 	}
 
 	@Override

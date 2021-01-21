@@ -38,7 +38,7 @@
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
-			<groupId>es.proyectoCapgemini.app</groupId>
+			<groupId>es.proyectoCapgemini.negocio</groupId>
 			<artifactId>proyectocapgemini-negocio</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
