@@ -19,7 +19,7 @@
 	</properties>
 
 	<dependencies>
-		<!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
+		<!-- https://mvnrepository.com/artifact/org.springframework/spring-context 
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
@@ -30,19 +30,16 @@
 					<artifactId></artifactId>
 				</exclusion>
 			</exclusions>
-		</dependency>
+		</dependency> -->
 
 	</dependencies>
 
-	<build>
+	  <build>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.8.0</version>
-				<configuration>
-					<release>11</release>
-				</configuration>
 			</plugin>
 		</plugins>
 

@@ -12,7 +12,7 @@
 	<packaging>jar</packaging>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<spring.version>5.3.3</spring.version>
+		<spring.version>4.3.7.RELEASE</spring.version>
 		<aspectj.version>1.6.10</aspectj.version>
 	</properties>
 
@@ -22,12 +22,6 @@
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
 			<version>${spring.version}</version>
-			<exclusions>
-				<exclusion>
-					<groupId></groupId>
-					<artifactId></artifactId>
-				</exclusion>
-			</exclusions>
 		</dependency>
 
 		<dependency>
@@ -51,15 +45,6 @@
 	</dependencies>
 
 	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.8.0</version>
-				<configuration>
-					<release>11</release>
-				</configuration>
-			</plugin>
-		</plugins>
+		
 	</build>
 </project>
