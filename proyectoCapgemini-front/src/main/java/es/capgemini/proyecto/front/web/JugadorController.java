@@ -1,11 +1,15 @@
 package es.capgemini.proyecto.front.web;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
+import es.capgemini.proyecto.negocio.clase.Jugador;
 import es.capgemini.proyecto.negocio.metodos.Metodos;
 
 /*
@@ -25,6 +29,7 @@ public class JugadorController {
 	
 	@RequestMapping(value = { "/" }, method = RequestMethod.GET)
 	public ModelAndView index() {
+
 		ModelAndView mv = new ModelAndView("index");
 		
 		mv.addObject("mensaje", "HOLA!!");

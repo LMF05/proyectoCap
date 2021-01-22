@@ -1,8 +1,12 @@
 package es.capgemini.proyecto.negocio.metodos;
 
+import es.capgemini.proyecto.negocio.clase.Jugador;
+
 public interface Metodos {
 
-	void Metodo1();
+	Jugador nuevoJugador();
 	
-	void Metodo2();
+	Jugador eliminarJugador(Jugador j);
+	
+	Jugador editarJugador(Jugador j);
 }

@@ -51,7 +51,8 @@ public class Jugador {
 	}
 	
 	public void aspectJ() {
-		metodos.Metodo1();
-		metodos.Metodo2();
+		metodos.editarJugador(null);
+		metodos.eliminarJugador(null);
+		metodos.nuevoJugador();
 	}
 }
